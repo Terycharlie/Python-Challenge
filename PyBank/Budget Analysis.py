@@ -25,15 +25,15 @@ with open(csvpath) as csvData:
     for row in reader:
         #Append the total months and total PL to their corresponding lists
         months.append(row[0])
-        profit.append(int(row[1])
+        profit.append(int(row[1]))
     #iterate through profits to get monthly change
     #for row in reader:
         #Append the total months and total PL to their corresponding lists
-        #months.append(row[0])
-        #profit.append(int(row[1])
+        months.append(row[0])
+        profit.append(int(row[1]))
     #iterate through profits to get monthly change
-    for i in range(len(profit)-1)
-        #Take the difference beteen the months and append monthly profit change 
+    for i in range(len(profit)-1):
+        #Take the difference between the months and append monthly profit change 
         profit_change.append(profit[i+1]-profit[i])    
     
 #get max & min for the monthly profit change list
@@ -52,7 +52,7 @@ for row in reader:
     #iterate through the profits to get monthly change
 for i in range(len(profit)-1):
  #Take the difference beteen the months and append monthly profit change 
-        profit_change(profit[i+1]-profit[i])    
+        profit_change.append(profit[i+1]-profit[i])    
     
 #get max & min for the monthly profit change list
 max_inc = max(profit_change)
@@ -69,5 +69,5 @@ print("====================")
 print(f"TOTAL MONTHS: {len(months)}")
 print(f"TOTAL: ${sum(profit)}")
 print(f"AVERAGE CHANGE: {round(sum(profit_change)/len(profit-change),2)}")
-print(f"GREATEST INCREASE IN PROFITS: {months[month_inc_max]} (${str(max_inc))})")
-print(f"GREATEST DECREASE IN PROFITS: {months[month_dec_max]} (${str(max_dec))})")
+print(f"GREATEST INCREASE IN PROFITS: {months[month_inc_max]} (${(str(max_inc))})")
+print(f"GREATEST DECREASE IN PROFITS: {months[month_dec_max]} (${(str(max_dec))})")
